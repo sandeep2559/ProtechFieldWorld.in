@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ProtechFieldWorld.com</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- =======================================================
+  * Template Name: Ninestars - v2.3.0
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <script>(function(w, d) { w.CollectId = "5ff0b65d2558920eb98190b6"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
+</head>
+<style>
+.modal-dialog{
+  top:30%;
+}
+.frm input{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto; 
+  display:block;
+  height:40px;
+
+}
+.frm input:hover{
+  border:2px solid #EB5D1E;
+}
+.frm button{
+  padding:5px 30px;
+  background-color: #EB5D1E;
+  color:white;
+  border:none;
+
+}
+.frm button:hover{
+  background-color:green;
+
+}
+
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ff6347;
+z-index: 999999;
+
+}
+@media screen and (max-width:800px){
+  .spinner{
+    width:40px;
+    height:40px;
+  }
+}
+@media screen and (min-width:800px){
+  .spinner{
+    width:80px;
+    height:80px;
+  }
+}
+.spinner {
+
+  background-color:white;
+
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+</style>
+<body>
+  <div class="spinner-wrapper">
+    <div class="spinner"></div>
+    </div>
+    <!-- ======= Header ======= -->
+
+  <header id="header" class="fixed-top" style="background-color:#EB5D1E">
+    <div class="container-fluid d-flex">
+
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span style="color:white">LOGO</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li>
+
+          <li class="get-started"><a href="result.html">View Demo</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center" >
+
+    <div class="container" >
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
+          <h1 style="text-shadow: 1px 1px 1px #000000;">Online Result Display Portal</h1>
+          <h2 style="color:white; text-shadow: 2px 2px 4px #000000;">ProtechFieldWorld provides online portal for schools to publish their results online.</h2>
+          <!-- <a href="#about" class="btn-get-started scrollto">Download Result</a> -->
+
+
+  <!-- Trigger the modal with a button -->
+ <a href="#" class="btn-get-started scrollto" data-toggle="modal" data-target="#myModal" style="text-decoration:none">Download Result</a>
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 style="margin-left:auto; margin-right:auto; display:block">FILL YOUR DETAIL</h1>
+          <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+         
+        </div>
+        <div class="modal-body">
+          <form class="frm">
+              <input type="text" class="userId" placeholder="Unique ID"><br><br>
+              <button type="submit" placeholder="submit" style=" margin-left:auto;
+              margin-right:auto; display:block;">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        </div>
+        <!-- <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/hero-img.svg" class="img-fluid animated" alt="">
+        </div> -->
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
+          </div>
+          <div class="col-lg-6 pt-5 pt-lg-0">
+            <h3 data-aos="fade-up">Best and Easiest way to download results</h3>
+            <p data-aos="fade-up" data-aos-delay="100">
+              Protechfield is an online platform that helps schools and colleges to manage their administrative and technological needs efficiently. We help them in developing their website and app. It enables them to publish their results online for easy accessibility to students and parents. 
+              We also provide an app in order to promote easy and efficient interaction among parents and teachers. It also helps parents in monitoring students' performances. 
+              
+            </p>
+            <div class="row">
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <i class="bx bx-receipt"></i>
+                <h4>Upload Data from excel</h4>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+              </div>
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Higher Efficiency</h4>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg" style="background:#dc5113">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2 style="color:white">Services</h2>
+          <p style="color:white">Check out the great services we offer</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-headphone"></i></div>
+              <h4 class="title"><a href="">24/7 result support service</a></h4>
+              <p class="description">We Provide 24/7 services to our clients, the online result portal is so much efficient and easy to use. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Convert Excell Sheet Data</a></h4>
+              <p class="description">You just need to provide the result data in an excell sheet and after successfully uploading the data the students can download their result easily.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-printer"></i></div>
+              <h4 class="title"><a href="">Easily Print The Result</a></h4>
+              <p class="description">The students can print or download their respective result by just clicking on the download button.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="400">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Student Friendly Interface</a></h4>
+              <p class="description">The interface is purely student friendly, it is a cup of cake for a student to download their result by just entering the unique ID</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio" data-aos="zoom-in" >
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Sample</h2>
+          <p>Here is an example of the result</p>
+        </div>
+        <img src="result.png" style="margin-left:auto; margin-right:auto; display:block;max-width:100%;box-shadow: 5px 10px 18px #888888; border:2px solid">
+     
+
+        <!-- <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div> -->
+
+        <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200"> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div> -->
+<!-- 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div> -->
+<!-- 
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="icofont-plus-circle"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="icofont-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div> -->
+<!-- 
+        </div> -->
+    
+      </div>
+    </section>
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq section-bg" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('mark1.jpg'); background-size:cover; background-repeat: no-repeat; background-attachment: fixed">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>F.A.Q</h2>
+          <p style="color:white">Frequently Asked Questions</p>
+        </div>
+
+        <ul class="faq-list">
+
+          <li data-aos="fade-up" data-aos-delay="100">
+            <a data-toggle="collapse" class="" href="#faq1" style="color:white">Non consectetur a erat nam at lectus urna duis? <i class="icofont-simple-up"></i></a>
+            <div id="faq1" class="collapse show" data-parent=".faq-list">
+              <p style="color:white">
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <a data-toggle="collapse" href="#faq2" class="collapsed" style="color:white">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="icofont-simple-up"></i></a>
+            <div id="faq2" class="collapse" data-parent=".faq-list">
+              <p style="color:white">
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <a data-toggle="collapse" href="#faq3" class="collapsed" style="color:white">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="icofont-simple-up"></i></a>
+            <div id="faq3" class="collapse" data-parent=".faq-list">
+              <p style="color:white">
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <a data-toggle="collapse" href="#faq4" class="collapsed" style="color:white">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
+            <div id="faq4" class="collapse" data-parent=".faq-list">
+              <p style="color:white">
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <a data-toggle="collapse" href="#faq5" class="collapsed" style="color:white">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="icofont-simple-up"></i></a>
+            <div id="faq5" class="collapse" data-parent=".faq-list">
+              <p style="color:white">
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="600">
+            <a data-toggle="collapse" href="#faq6" class="collapsed" style="color:white">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="icofont-simple-up"></i></a>
+            <div id="faq6" class="collapse" data-parent=".faq-list">
+              <p style="color:white">
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Our team is always here to help</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <span>Chief Executive Officer</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <span>Product Manager</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <span>CTO</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <span>Accountant</span>
+                </div>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <!-- <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Clients</h2>
+          <p>They trusted us</p>
+        </div>
+
+        <div class="owl-carousel clients-carousel" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/img/clients/client-1.png" alt="">
+          <img src="assets/img/clients/client-2.png" alt="">
+          <img src="assets/img/clients/client-3.png" alt="">
+          <img src="assets/img/clients/client-4.png" alt="">
+          <img src="assets/img/clients/client-5.png" alt="">
+          <img src="assets/img/clients/client-6.png" alt="">
+          <img src="assets/img/clients/client-7.png" alt="">
+          <img src="assets/img/clients/client-8.png" alt="">
+        </div>
+
+      </div>
+    </section>End Clients Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+         
+          <p style='color:white'>Contact us</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" >
+
+    <div class="footer-newsletter" data-aos="fade-up" >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <h4 style="color:white">Join Our Newsletter</h4>
+            <p style="color:white">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact" data-aos="fade-up" data-aos-delay="100">
+            <h3>Protech Field</h3>
+            <p>
+             building number, street, area, pincode<br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="400">
+            <h4>Our Social Networks</h4>
+            <p>Get Connected with us on these social platforms</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright" style="color:white">
+        &copy; Copyright <strong><span>Devoftech</span></strong>. All Rights Reserved
+      </div>
+     
+    </div>
+  </footer><!-- End Footer -->
+  </div>
+  <script>
+    $(document).ready(function() {
+    //Preloader
+    preloaderFadeOutTime = 500;
+    function hidePreloader() {
+    var preloader = $('.spinner-wrapper');
+    preloader.fadeOut(preloaderFadeOutTime);
+    }
+    hidePreloader();
+    });
+    </script>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
